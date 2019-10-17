@@ -56,10 +56,12 @@ class MoivesViewController: UIViewController,UITableViewDataSource,UITableViewDe
     */
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //Set up int according to the # of movies
         return movie.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //identifier for the cell in storyboard, and as! MovieCell is the class file
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
         
         let movieName = movie[indexPath.row]

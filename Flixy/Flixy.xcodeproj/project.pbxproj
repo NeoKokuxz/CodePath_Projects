@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -58,7 +58,6 @@
 				C1FB13E8130799D591F0BB33 /* Pods-Flixy.debug.xcconfig */,
 				3F90421AB2E6419526EB3364 /* Pods-Flixy.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -358,6 +357,7 @@
 			baseConfigurationReference = C1FB13E8130799D591F0BB33 /* Pods-Flixy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WXSJU392VJ;
 				INFOPLIST_FILE = Flixy/Info.plist;
@@ -367,6 +367,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kokubyakuin.Flixy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -377,6 +378,7 @@
 			baseConfigurationReference = 3F90421AB2E6419526EB3364 /* Pods-Flixy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WXSJU392VJ;
 				INFOPLIST_FILE = Flixy/Info.plist;
@@ -386,6 +388,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kokubyakuin.Flixy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
