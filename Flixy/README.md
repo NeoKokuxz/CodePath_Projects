@@ -16,10 +16,7 @@ Flixy is an app that allows users to browse movies from the [The Movie Database 
 - [x] (2pts) In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer.
 
 ### App Walkthough GIF
-
 <img src="http://g.recordit.co/M8vGvc22Sv.gif" width=250><br>
-<img src="http://g.recordit.co/J7wRRjhjyV.gif" width=250><br>
-
 
 ### Notes
 
@@ -44,6 +41,7 @@ Flixy is an app that allows users to browse movies from the [The Movie Database 
 - [x] (1pt) Run your app on a real device.
 
 ### App Walkthough GIF
+<img src="http://g.recordit.co/J7wRRjhjyV.gif" width=250><br>
 
 ### Note
 
