@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		43ACB4138AACBC19C4D0469B /* Pods_Flixy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F066FE2B789E109531E7C8FF /* Pods_Flixy.framework */; };
+		C185AD0D23636F07002C7265 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185AD0C23636F07002C7265 /* InfoViewController.swift */; };
+		C185AD0F23637E36002C7265 /* TrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185AD0E23637E36002C7265 /* TrailerViewController.swift */; };
+		C185AD1123637FF5002C7265 /* Trailer1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185AD1023637FF5002C7265 /* Trailer1ViewController.swift */; };
 		C186D38A2360F15C00F1396D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C186D3892360F15C00F1396D /* DetailViewController.swift */; };
 		C186D38C23627ED300F1396D /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C186D38B23627ED300F1396D /* CollectionViewController.swift */; };
 		C186D38E2362832800F1396D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C186D38D2362832800F1396D /* CollectionViewCell.swift */; };
@@ -22,6 +25,9 @@
 
 /* Begin PBXFileReference section */
 		3F90421AB2E6419526EB3364 /* Pods-Flixy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixy.release.xcconfig"; path = "Target Support Files/Pods-Flixy/Pods-Flixy.release.xcconfig"; sourceTree = "<group>"; };
+		C185AD0C23636F07002C7265 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		C185AD0E23637E36002C7265 /* TrailerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerViewController.swift; sourceTree = "<group>"; };
+		C185AD1023637FF5002C7265 /* Trailer1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer1ViewController.swift; sourceTree = "<group>"; };
 		C186D3892360F15C00F1396D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C186D38B23627ED300F1396D /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		C186D38D2362832800F1396D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -91,10 +97,13 @@
 				C1DD4DF6235676C100516F7C /* AppDelegate.swift */,
 				C1DD4DF8235676C100516F7C /* SceneDelegate.swift */,
 				C1DD4DFC235676C100516F7C /* Main.storyboard */,
+				C185AD0C23636F07002C7265 /* InfoViewController.swift */,
 				C186D38D2362832800F1396D /* CollectionViewCell.swift */,
 				C186D3892360F15C00F1396D /* DetailViewController.swift */,
 				C186D38B23627ED300F1396D /* CollectionViewController.swift */,
+				C185AD0E23637E36002C7265 /* TrailerViewController.swift */,
 				C1DD4E0E2357E33E00516F7C /* MovieCell.swift */,
+				C185AD1023637FF5002C7265 /* Trailer1ViewController.swift */,
 				C1DD4DFF235676C500516F7C /* Assets.xcassets */,
 				C1DD4E0C2357A2E100516F7C /* MoivesViewController.swift */,
 				C1DD4E01235676C500516F7C /* LaunchScreen.storyboard */,
@@ -220,11 +229,14 @@
 			files = (
 				C186D38C23627ED300F1396D /* CollectionViewController.swift in Sources */,
 				C1DD4E0D2357A2E100516F7C /* MoivesViewController.swift in Sources */,
+				C185AD1123637FF5002C7265 /* Trailer1ViewController.swift in Sources */,
 				C1DD4DF7235676C100516F7C /* AppDelegate.swift in Sources */,
 				C186D38E2362832800F1396D /* CollectionViewCell.swift in Sources */,
 				C186D38A2360F15C00F1396D /* DetailViewController.swift in Sources */,
 				C1DD4E0F2357E33E00516F7C /* MovieCell.swift in Sources */,
+				C185AD0D23636F07002C7265 /* InfoViewController.swift in Sources */,
 				C1DD4DF9235676C100516F7C /* SceneDelegate.swift in Sources */,
+				C185AD0F23637E36002C7265 /* TrailerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

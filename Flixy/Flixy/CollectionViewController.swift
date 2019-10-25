@@ -28,7 +28,7 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
         layout.minimumLineSpacing = 9  
         layout.minimumInteritemSpacing = 0
         
-        let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2)  / 3
+        let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2)  / 2
             
         layout.itemSize = CGSize(width: width, height: width * 3 / 2)
         
@@ -79,7 +79,25 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
         cell.poster.af_setImage(withURL: posterUrl!)
         
         return cell
-        
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        
+        //Find the movie
+        let cell = sender as! UICollectionViewCell
+        let indexPath = collectionView.indexPath(for: cell)!
+        let movieTap = movies[indexPath.row]
+        
+        //pass the selected movie
+        let infoViewController = segue.destination as! InfoViewController
+        
+        infoViewController.movieSelect = movieTap
+        
+//        collectionView.deselectRow(at: indexPath, animated: true)
+    }
+    
 
+    
 }

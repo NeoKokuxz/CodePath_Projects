@@ -1,34 +1,34 @@
- //
-//  DetailViewController.swift
+//
+//  InfoViewController.swift
 //  Flixy
 //
-//  Created by Naoki on 10/23/19.
+//  Created by Naoki on 10/25/19.
 //  Copyright © 2019 Naoki. All rights reserved.
 //
 
 import UIKit
-import AlamofireImage
- 
-class DetailViewController: UIViewController {
 
+class InfoViewController: UIViewController {
     @IBOutlet weak var bgPoster: UIImageView!
     @IBOutlet weak var poster: UIImageView!
     @IBOutlet weak var movieName: UILabel!
-    @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet weak var info: UILabel!
     @IBOutlet weak var date: UILabel!
     
-    // ! swift optional
     var movieSelect : [String:Any]!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         movieName.text = movieSelect["title"] as? String
-        infoLabel.text = movieSelect["overview"] as? String
+        info.text = movieSelect["overview"] as? String
         date.text = movieSelect["release_date"] as? String
         //If the size of the info is sorten by ...
         //use infoLabel.sizeToFit()
+        
+        let idNum = movieSelect["id"] as! IntegerLiteralType
+        print("From Info Page", idNum)
         
         let baseUrl = "https://image.tmdb.org/t/p/w185"
         let posterPath = movieSelect["poster_path"] as! String
@@ -41,7 +41,7 @@ class DetailViewController: UIViewController {
         poster.af_setImage(withURL: posterUrl!)
         bgPoster.af_setImage(withURL: backgroundURL!)
     }
-     
+    
 
     /*
     // MARK: - Navigation
@@ -52,7 +52,7 @@ class DetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
@@ -65,8 +65,9 @@ class DetailViewController: UIViewController {
         print(movieID)
 
         print(url)
-        let vc = segue.destination as! Trailer1ViewController
+        var vc = segue.destination as! TrailerViewController
         vc.link = url
+        
     }
 
 }
