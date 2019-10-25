@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		43ACB4138AACBC19C4D0469B /* Pods_Flixy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F066FE2B789E109531E7C8FF /* Pods_Flixy.framework */; };
+		C186D38A2360F15C00F1396D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C186D3892360F15C00F1396D /* DetailViewController.swift */; };
+		C186D38C23627ED300F1396D /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C186D38B23627ED300F1396D /* CollectionViewController.swift */; };
+		C186D38E2362832800F1396D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C186D38D2362832800F1396D /* CollectionViewCell.swift */; };
 		C1DD4DF7235676C100516F7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DD4DF6235676C100516F7C /* AppDelegate.swift */; };
 		C1DD4DF9235676C100516F7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DD4DF8235676C100516F7C /* SceneDelegate.swift */; };
 		C1DD4DFE235676C100516F7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1DD4DFC235676C100516F7C /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 
 /* Begin PBXFileReference section */
 		3F90421AB2E6419526EB3364 /* Pods-Flixy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixy.release.xcconfig"; path = "Target Support Files/Pods-Flixy/Pods-Flixy.release.xcconfig"; sourceTree = "<group>"; };
+		C186D3892360F15C00F1396D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C186D38B23627ED300F1396D /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		C186D38D2362832800F1396D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		C1DD4DF3235676C100516F7C /* Flixy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flixy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1DD4DF6235676C100516F7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1DD4DF8235676C100516F7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +91,9 @@
 				C1DD4DF6235676C100516F7C /* AppDelegate.swift */,
 				C1DD4DF8235676C100516F7C /* SceneDelegate.swift */,
 				C1DD4DFC235676C100516F7C /* Main.storyboard */,
+				C186D38D2362832800F1396D /* CollectionViewCell.swift */,
+				C186D3892360F15C00F1396D /* DetailViewController.swift */,
+				C186D38B23627ED300F1396D /* CollectionViewController.swift */,
 				C1DD4E0E2357E33E00516F7C /* MovieCell.swift */,
 				C1DD4DFF235676C500516F7C /* Assets.xcassets */,
 				C1DD4E0C2357A2E100516F7C /* MoivesViewController.swift */,
@@ -209,8 +218,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C186D38C23627ED300F1396D /* CollectionViewController.swift in Sources */,
 				C1DD4E0D2357A2E100516F7C /* MoivesViewController.swift in Sources */,
 				C1DD4DF7235676C100516F7C /* AppDelegate.swift in Sources */,
+				C186D38E2362832800F1396D /* CollectionViewCell.swift in Sources */,
+				C186D38A2360F15C00F1396D /* DetailViewController.swift in Sources */,
 				C1DD4E0F2357E33E00516F7C /* MovieCell.swift in Sources */,
 				C1DD4DF9235676C100516F7C /* SceneDelegate.swift in Sources */,
 			);

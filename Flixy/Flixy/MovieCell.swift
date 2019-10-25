@@ -1,5 +1,5 @@
 //
-//  MovieCell.swift
+//
 //  Flixy
 //
 //  Created by Naoki on 10/16/19.

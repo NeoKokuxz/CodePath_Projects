@@ -45,15 +45,9 @@ class MoivesViewController: UIViewController,UITableViewDataSource,UITableViewDe
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //Set up int according to the # of movies
@@ -81,5 +75,24 @@ class MoivesViewController: UIViewController,UITableViewDataSource,UITableViewDe
         
         return cell
     }
+    
+    //Navigation to info page
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        
+        //Find the movie
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let movieTap = movie[indexPath.row]
+        
+        //pass the selected movie
+        let detailViewController = segue.destination as! DetailViewController
+        
+        detailViewController.movieSelect = movieTap
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
 
 }
