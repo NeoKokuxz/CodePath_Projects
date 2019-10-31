@@ -192,7 +192,7 @@
         <!--Trailer1 View Controller-->
         <scene sceneID="AYS-fE-XT0">
             <objects>
-                <viewController id="2wb-CF-pDU" customClass="Trailer1ViewController" customModule="Flixy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="2wb-CF-pDU" customClass="Trailer1ViewController" customModule="Flixy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WUL-mb-rug">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -388,8 +388,8 @@
         <!--Trailer View Controller-->
         <scene sceneID="sH2-NF-Kk7">
             <objects>
-                <viewController id="JY6-2R-wEH" customClass="TrailerViewController" customModule="Flixy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cCx-M0-TJh">
+                <viewController modalTransitionStyle="flipHorizontal" id="JY6-2R-wEH" customClass="TrailerViewController" customModule="Flixy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="cCx-M0-TJh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
