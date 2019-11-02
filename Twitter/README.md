@@ -1,6 +1,6 @@
-# Project 3 - *TwitterClone*
+# Twitter - Part I
 
-**TwitterClone** is a basic twitter app to read your tweets.
+This is a basic twitter app to read your tweets.
 
 Time spent: **3** hours spent in total
 
@@ -22,7 +22,6 @@ The following **bonus** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-
 <img src='http://g.recordit.co/dPyfRmNfVz.gif' width = 250 />
 <img src='http://g.recordit.co/TccmhjfKrd.gif' width = 250 />
 <img src='http://g.recordit.co/70muYejEut.gif' width = 250 /></br>
