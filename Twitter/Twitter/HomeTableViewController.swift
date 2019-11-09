@@ -13,14 +13,20 @@ class HomeTableViewController: UITableViewController {
     var tweetArray = [NSDictionary]()
     var tweetNums : Int!
     
+    
     let myRefreashControl = UIRefreshControl()
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadTweets()
-        
         myRefreashControl.addTarget(self, action: #selector(loadTweets), for: .valueChanged)
         tableView.refreshControl = myRefreashControl
+//        tableView.rowHeight = UITableView.automaticDimension
+//        tableView.estimatedRowHeight = 150
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        loadTweets()
     }
     
     @objc func loadTweets(){
@@ -102,6 +108,9 @@ class HomeTableViewController: UITableViewController {
             cell.tweetImage.image = UIImage(data: imageData)
         }
         
+        cell.setFavor(tweetArray[indexPath.row]["favorited"] as! Bool)
+        cell.tweetID = (tweetArray[indexPath.row]["id"] as! Int)
+        cell.retweeted = tweetArray[indexPath.row]["retweeted"] as! Bool
         return cell
     }
     

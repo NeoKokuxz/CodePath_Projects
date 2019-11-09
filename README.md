@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Twitter - Part II
 
 This is a basic twitter app to view, compose, favorite, and retweet tweets.
@@ -60,3 +61,9 @@ Here's a walkthrough of implemented user stories:</br>
 2. NYCGo - An app that helps user to explore NYC in a different way, enrich user experience in the city. 
 3. Twitter -Basic Twitter clone for user to explore their Twitter account. 
 >>>>>>> d9062ab9e1297f53516ced60b1546d8814debd5a
+=======
+# List
+  1. Flixy - Users can view the current movies playing in theatres by movie name, discription and movie posters.	1. Flixy - Users can view the current movies playing in theatres by movie name, discription and movie posters.
+  2. NYCGo - An app that helps user to explore NYC in a different way, enrich user experience in the city. 
+  3. Twitter -Basic Twitter clone for user to explore their Twitter account. 
+>>>>>>> 6589556a8d7adf6bd3ac50785fb7a727a371da22
