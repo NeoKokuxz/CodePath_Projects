@@ -13,7 +13,6 @@ class HomeTableViewController: UITableViewController {
     var tweetArray = [NSDictionary]()
     var tweetNums : Int!
     
-    
     let myRefreashControl = UIRefreshControl()
  
     override func viewDidLoad() {
@@ -22,6 +21,10 @@ class HomeTableViewController: UITableViewController {
         tableView.refreshControl = myRefreashControl
 //        tableView.rowHeight = UITableView.automaticDimension
 //        tableView.estimatedRowHeight = 150
+        
+//        numLikes.text = "102"
+//        numRetweets.text = "32"
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -87,6 +90,7 @@ class HomeTableViewController: UITableViewController {
     }
     
     @IBAction func logoutBtn(_ sender: Any) {
+        print("pressed")
         TwitterAPICaller.client?.logout()
         self.dismiss(animated: true, completion: nil)
         UserDefaults.standard.set(false, forKey: "userLoggedIn")
@@ -96,13 +100,19 @@ class HomeTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tweetCell", for: indexPath) as! TweetTableViewCell
         
-//        cell.tweetImage
+        //cell.tweetImage
         let user = tweetArray[indexPath.row]["user"] as! NSDictionary
         cell.nameLabel.text = user["name"] as? String
         cell.tweetContent.text = tweetArray[indexPath.row]["text"] as? String
         
         let imageUrl = URL(string: (user["profile_image_url_https"] as? String)!)
         let data = try? Data(contentsOf: imageUrl!)
+        
+        let likes = tweetArray[indexPath.row]["favorite_count"] as? Int
+        cell.numLikes.text = "\(likes!)"
+        let retweets = tweetArray[indexPath.row]["retweet_count"] as? Int
+        cell.numRetweets.text = "\(retweets!)"
+        
         
         if let imageData = data {
             cell.tweetImage.image = UIImage(data: imageData)
@@ -113,6 +123,8 @@ class HomeTableViewController: UITableViewController {
         cell.retweeted = tweetArray[indexPath.row]["retweeted"] as! Bool
         return cell
     }
+    
+    
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath){
         if indexPath.row + 1 == tweetArray.count {

@@ -21,6 +21,7 @@ class LoginPageViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        placeHolder()
     }
     
 
@@ -35,6 +36,20 @@ class LoginPageViewController: UIViewController {
             self.performSegue(withIdentifier: "login", sender: self)
         }
     }
+    @IBAction func dismiss(_ sender: Any) {
+        view.endEditing(true)
+    }
+    
+    //Place Holder for username and password
+    func placeHolder(){
+        usernameInput.text = "username"
+        usernameInput.textColor = UIColor.gray
+        passwordInput.text = "password"
+        passwordInput.textColor = UIColor.gray
+    }
+    
+    
+    
     
     //Login Button
     @IBAction func loginBtn(_ sender: Any) {

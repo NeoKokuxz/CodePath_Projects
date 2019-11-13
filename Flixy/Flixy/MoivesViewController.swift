@@ -93,6 +93,4 @@ class MoivesViewController: UIViewController,UITableViewDataSource,UITableViewDe
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
-
 }
