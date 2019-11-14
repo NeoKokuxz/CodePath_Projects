@@ -19,11 +19,9 @@ class HomeTableViewController: UITableViewController {
         super.viewDidLoad()
         myRefreashControl.addTarget(self, action: #selector(loadTweets), for: .valueChanged)
         tableView.refreshControl = myRefreashControl
+        loadTweets()
 //        tableView.rowHeight = UITableView.automaticDimension
 //        tableView.estimatedRowHeight = 150
-        
-//        numLikes.text = "102"
-//        numRetweets.text = "32"
         
     }
     

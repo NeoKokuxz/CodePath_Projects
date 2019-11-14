@@ -46,12 +46,16 @@ class TweetTableViewCell: UITableViewCell {
         if(favorited != true){
             TwitterAPICaller.client?.favorTweet(tweetID: tweetID, success: {
                 self.setFavor(true)
+                let likes = Int(self.numLikes.text!)
+                self.numLikes.text = "\(likes! + 1)"
             }, failure: { (error) in
                 print(error)
             })
         }else{
             TwitterAPICaller.client?.unFavorTweet(tweetID: tweetID, success: {
                 self.setFavor(false)
+                let likes = Int(self.numLikes.text!)
+                self.numLikes.text = "\(likes! - 1)"
             }, failure: { (error) in
                 print(error)
             })
