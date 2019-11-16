@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  SignUpPageViewController.swift
 //  Parstagram
 //
 //  Created by Naoki on 11/15/19.
@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class LoginViewController: UIViewController {
+class SignUpPageViewController: UIViewController {
 
     @IBOutlet weak var usernameInput: UITextField!
     @IBOutlet weak var passwordInput: UITextField!
@@ -19,24 +19,32 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func cancelBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func dismissKeyboard(_ sender: Any) {
         view.endEditing(true)
     }
     
-    @IBAction func signinBtn(_ sender: Any) {
-        PFUser.logInWithUsername(inBackground: usernameInput.text!, password: passwordInput.text!){
-            (user, error) in
-            if user != nil {
-                self.performSegue(withIdentifier: "loginSeg", sender: nil)
+    @IBAction func signupCompleteBtn(_ sender: Any) {
+        var user = PFUser()
+        user.username = usernameInput.text
+        user.password = passwordInput.text
+        
+        user.signUpInBackground { (sucess, error) in
+            if sucess   {
+                print("successfully signed up!")
                 self.usernameInput.text = nil
                 self.passwordInput.text = nil
-            }else {
-                print("\(error)")
+            }else{
+//                print("failed to sign up")
+                print(error)
             }
-            
         }
-        
     }
+    
     
     /*
     // MARK: - Navigation

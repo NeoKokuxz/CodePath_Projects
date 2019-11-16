@@ -7,16 +7,69 @@
 //
 
 import UIKit
+import Parse
+import Alamofire
 
-class HomeViewController: UIViewController {
 
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    @IBOutlet weak var postTable: UITableView!
+    
+    var post = [PFObject]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        postTable.delegate = self
+        postTable.dataSource = self
+    DataRequest.addAcceptableImageContentTypes(["application/octet-stream"])
+
     }
     
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let query = PFQuery(className: "Posts")
+        query.includeKey("user")
+        query.limit = 20
+        
+        query.findObjectsInBackground{ (posts, error) in
+            if posts != nil {
+                self.post = posts!
+                self.postTable.reloadData()
+            }
+        }
+    }
+    
+    @IBAction func logoutBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return post.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
+        
+        let postDetailInfo = post[indexPath.row]
+        
+        let user = postDetailInfo["user"] as! PFUser
+        
+        cell.userLabel.text = user.username
+        cell.commentLabel.text = postDetailInfo["caption"] as! String
+        
+        let imageFile = postDetailInfo["image"] as! PFFileObject
+        let urlString = imageFile.url!
+        let url = URL(string: urlString)!
+        print(urlString)
+        
+        cell.postImage.af_setImage(withURL: url)
+        
+        return cell
+    }
+    
     /*
     // MARK: - Navigation
 
