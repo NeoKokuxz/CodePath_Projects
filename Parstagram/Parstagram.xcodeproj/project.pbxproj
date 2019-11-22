@@ -18,6 +18,7 @@
 		C13D597C237F3F07005FAEF4 /* SignUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13D597B237F3F07005FAEF4 /* SignUpPageViewController.swift */; };
 		C13D597E237F48B5005FAEF4 /* CameraPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13D597D237F48B5005FAEF4 /* CameraPageViewController.swift */; };
 		C13D5980237F6C61005FAEF4 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13D597F237F6C61005FAEF4 /* PostCell.swift */; };
+		C13D59822387231F005FAEF4 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13D59812387231F005FAEF4 /* CommentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		C13D597B237F3F07005FAEF4 /* SignUpPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPageViewController.swift; sourceTree = "<group>"; };
 		C13D597D237F48B5005FAEF4 /* CameraPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPageViewController.swift; sourceTree = "<group>"; };
 		C13D597F237F6C61005FAEF4 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		C13D59812387231F005FAEF4 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		CDC98BF970FACE28D5672952 /* Pods_Parstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 				C13D597B237F3F07005FAEF4 /* SignUpPageViewController.swift */,
 				C13D5979237F3729005FAEF4 /* HomeViewController.swift */,
 				C13D597D237F48B5005FAEF4 /* CameraPageViewController.swift */,
+				C13D59812387231F005FAEF4 /* CommentCell.swift */,
 				C13D5971237E004D005FAEF4 /* Info.plist */,
 			);
 			path = Parstagram;
@@ -225,6 +228,7 @@
 				C13D597A237F372A005FAEF4 /* HomeViewController.swift in Sources */,
 				C13D597E237F48B5005FAEF4 /* CameraPageViewController.swift in Sources */,
 				C13D597C237F3F07005FAEF4 /* SignUpPageViewController.swift in Sources */,
+				C13D59822387231F005FAEF4 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
