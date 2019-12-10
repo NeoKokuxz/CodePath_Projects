@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
                 self.usernameInput.text = nil
                 self.passwordInput.text = nil
             }else {
-                print("\(error)")
+                print("error")
             }
             
         }

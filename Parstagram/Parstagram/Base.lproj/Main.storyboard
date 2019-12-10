@@ -369,6 +369,11 @@
                                 <action selector="dismissBtn:" destination="LuQ-xC-aND" id="Pl2-E3-gif"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="image" image="folder.fill" catalog="system" id="6PP-yp-N7t">
+                            <connections>
+                                <action selector="photoLibraryButton:" destination="LuQ-xC-aND" id="Lbp-ZD-QM7"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="cameraImg" destination="YvK-r9-XSl" id="olk-Pd-Qjr"/>
@@ -447,6 +452,7 @@
     <resources>
         <image name="camera" catalog="system" width="64" height="48"/>
         <image name="clear" catalog="system" width="64" height="56"/>
+        <image name="folder.fill" catalog="system" width="64" height="48"/>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="instagram_logo" width="255" height="108"/>
     </resources>

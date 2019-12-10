@@ -38,6 +38,7 @@ class SignUpPageViewController: UIViewController {
                 print("successfully signed up!")
                 self.usernameInput.text = nil
                 self.passwordInput.text = nil
+                self.dismiss(animated: true, completion: nil)
             }else{
 //                print("failed to sign up")
                 print(error)

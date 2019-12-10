@@ -67,8 +67,20 @@ class CameraPageViewController: UIViewController, UIImagePickerControllerDelegat
         }else {
             picker.sourceType = .photoLibrary
         }
-        
         present(picker, animated: true, completion: nil)
+    }
+    
+    @IBAction func photoLibraryButton(_ sender: Any) {
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.allowsEditing = true
+        picker.sourceType = .photoLibrary
+        if UIImagePickerController.isSourceTypeAvailable(.camera){
+            picker.sourceType = .photoLibrary
+        }
+        present(picker, animated: true, completion: nil)
+        
+
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

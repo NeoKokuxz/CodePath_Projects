@@ -81,7 +81,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let delegate = self.view.window?.windowScene?.delegate as! SceneDelegate
         
         delegate.window?.rootViewController = loginViewController
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -194,7 +193,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             if success {
                 print(" Comment: ", (comment), " -> comment saved")
             } else {
-                print(error)
+                print("error")
             }
         }
         
