@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,7 +10,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="loginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="InstaClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,7 +93,7 @@
         <!--Sign Up-->
         <scene sceneID="mI3-c7-iZT">
             <objects>
-                <viewController id="yJW-xP-n05" customClass="SignUpPageViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yJW-xP-n05" customClass="SignUpPageViewController" customModule="InstaClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Glv-LP-kr9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,7 +178,7 @@
         <!--Home-->
         <scene sceneID="pFC-ds-foT">
             <objects>
-                <viewController id="HB6-Jx-bI5" customClass="HomeViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HB6-Jx-bI5" customClass="HomeViewController" customModule="InstaClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ioo-gB-KT7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -187,7 +187,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="325" id="Yph-TO-lhZ" customClass="PostCell" customModule="Parstagram" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="325" id="Yph-TO-lhZ" customClass="PostCell" customModule="InstaClone" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="325"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yph-TO-lhZ" id="afp-3h-dRw">
@@ -235,7 +235,7 @@
                                             <outlet property="userLabel" destination="fHw-mp-mgK" id="NTb-Dg-XVO"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" id="Yin-f8-ATp" customClass="CommentCell" customModule="Parstagram" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" id="Yin-f8-ATp" customClass="CommentCell" customModule="InstaClone" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="353" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yin-f8-ATp" id="jzI-7I-bkG">
@@ -328,28 +328,28 @@
         <!--Camera-->
         <scene sceneID="V85-WY-K6R">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="LuQ-xC-aND" userLabel="Camera" customClass="CameraPageViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="LuQ-xC-aND" userLabel="Camera" customClass="CameraPageViewController" customModule="InstaClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="LUP-4X-kEm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="YvK-r9-XSl">
-                                <rect key="frame" x="20" y="88" width="374" height="363"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="YvK-r9-XSl">
+                                <rect key="frame" x="76" y="93" width="263" height="250"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="S8a-1R-9cW"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Adi-qE-nUI" appends="YES" id="frb-41-cas"/>
                                 </connections>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w0z-oX-EWg" userLabel="comment">
-                                <rect key="frame" x="20" y="477" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w0z-oX-EWg" userLabel="comment">
+                                <rect key="frame" x="20" y="381" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywe-d1-1wI">
-                                <rect key="frame" x="192" y="613" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywe-d1-1wI">
+                                <rect key="frame" x="191.5" y="423" width="31" height="30"/>
                                 <state key="normal" title="Post"/>
                                 <connections>
                                     <action selector="postBtn:" destination="LuQ-xC-aND" eventType="touchUpInside" id="eaG-xI-4AG"/>
@@ -358,6 +358,16 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YvK-r9-XSl" secondAttribute="trailing" constant="75" id="0fs-hy-iy7"/>
+                            <constraint firstItem="ywe-d1-1wI" firstAttribute="centerX" secondItem="LUP-4X-kEm" secondAttribute="centerX" id="0kS-yD-6ZL"/>
+                            <constraint firstItem="w0z-oX-EWg" firstAttribute="leading" secondItem="Kfq-Ey-eaD" secondAttribute="leading" constant="20" id="FcC-LB-R9D"/>
+                            <constraint firstItem="Kfq-Ey-eaD" firstAttribute="trailing" secondItem="w0z-oX-EWg" secondAttribute="trailing" constant="20" id="Fyf-NC-KIP"/>
+                            <constraint firstItem="YvK-r9-XSl" firstAttribute="top" secondItem="Kfq-Ey-eaD" secondAttribute="top" constant="5" id="Oms-L0-nnI"/>
+                            <constraint firstItem="w0z-oX-EWg" firstAttribute="top" secondItem="YvK-r9-XSl" secondAttribute="bottom" constant="38" id="T1t-Ko-eG5"/>
+                            <constraint firstItem="ywe-d1-1wI" firstAttribute="top" secondItem="w0z-oX-EWg" secondAttribute="bottom" constant="8" id="Ye9-UC-NlE"/>
+                            <constraint firstItem="YvK-r9-XSl" firstAttribute="leading" secondItem="LUP-4X-kEm" secondAttribute="leading" constant="76" id="bNB-Vb-Ofj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Kfq-Ey-eaD"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="6JE-Jf-gb9" appends="YES" id="d2v-Fg-Jzo"/>
@@ -389,6 +399,11 @@
                 <tapGestureRecognizer id="6JE-Jf-gb9" userLabel="dismiss Tap Gesture Recognizer">
                     <connections>
                         <action selector="dismissKeybard:" destination="LuQ-xC-aND" id="hoO-wj-agY"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="0rI-nZ-fG5">
+                    <connections>
+                        <action selector="keyboardDis:" destination="LuQ-xC-aND" id="oSc-ag-hXR"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -452,7 +467,7 @@
     <resources>
         <image name="camera" catalog="system" width="64" height="48"/>
         <image name="clear" catalog="system" width="64" height="56"/>
-        <image name="folder.fill" catalog="system" width="64" height="48"/>
+        <image name="folder.fill" catalog="system" width="64" height="46"/>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="instagram_logo" width="255" height="108"/>
     </resources>

@@ -27,9 +27,13 @@ class CameraPageViewController: UIViewController, UIImagePickerControllerDelegat
         self.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func keyboardDis(_ sender: Any) {
+        view.endEditing(true)
+    }
     @IBAction func postBtn(_ sender: Any) {
         let post = PFObject(className: "Posts")
         
+        print("post pressed!")
         post["caption"] = commentText.text!
         post["user"] = PFUser.current()!
         
@@ -46,6 +50,8 @@ class CameraPageViewController: UIViewController, UIImagePickerControllerDelegat
                 print("error")
             }
         }
+        
+        self.dismiss(animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation
